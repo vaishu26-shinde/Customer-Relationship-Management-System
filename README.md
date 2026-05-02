@@ -1,86 +1,37 @@
 # Customer-Relationship-Management-System
 A Java + MySQL desktop CRM application with Login, Dashboard, Customer Management, Interactions, Service Tickets and Deals modules built using Java Swing GUI.
 
-# ◈ CRM Pro — Customer Relationship Management System
-### BTech Project | Java + MySQL | Swing GUI
+### BTech SY Project | Java + MySQL + Swing GUI
 
----
+A desktop-based **Customer Relationship Management (CRM)** application 
+built using **Core Java**, **Java Swing**, **AWT**, and **MySQL** database.
 
-## 📋 Project Overview
+## Features
+- Login Page with username/password authentication
+- Dashboard with live customer, ticket and deal counts
+- Customer Management — Add, Edit, Delete, Search
+- Interaction Tracking — Log Calls, Emails, Meetings
+- Service Tickets — Create tickets, update status and priority
+- Deals & Pipeline — Track sales from Lead to Won/Lost
 
-A fully-featured **Customer Relationship Management (CRM)** desktop application built with:
-- **Java Swing** — Rich, dark-themed GUI
-- **MySQL** — Relational database backend
-- **JDBC** — Java Database Connectivity
-- **Design Patterns** — DAO, Singleton, MVC
+## Technologies Used
+| Technology | Purpose |
+|------------|---------|
+| Java (JDK 8+) | Core programming language |
+| Java Swing + AWT | GUI (desktop interface) |
+| MySQL 8.0 | Database |
+| JDBC | Java-Database connectivity |
+| MySQL Connector/J | JDBC driver |
 
----
+## How to Run
+1. Run `crm_schema.sql` in MySQL Workbench
+2. Set your MySQL password in `DBConnection.java`
+3. Add `mysql-connector-java.jar` to classpath
+4. Run `CRMApp.java`
 
-## 🎯 Features
 
-| Module | Features |
-|--------|----------|
-| **Dashboard** | KPI cards, live stats, pipeline value, quick tips |
-| **Customers** | Add, Edit, Delete, Search, View Details |
-| **Interactions** | Log Calls, Emails, Meetings, Follow-ups |
-| **Service Desk** | Create Tickets, Update Status, Priority tracking |
-| **Deals** | Pipeline management, Stage tracking, Revenue |
 
----
+## Concepts Covered
+`Java OOP` `JDBC` `Java Swing` `AWT` `MySQL` `Exception Handling` `PreparedStatement` `JTable` `JDialog` `CRUD Operations`
 
-## 🗃️ Database Tables
-
-| Table | Purpose |
-|-------|---------|
-| `customers` | Core customer profiles |
-| `interactions` | Every touchpoint (call, email, meeting) |
-| `service_history` | Support tickets and resolutions |
-| `deals` | Sales pipeline and deal stages |
-
----
-
-## 🎨 UI Theme
-- Dark navy color scheme (`#0D111E` background)
-- Electric blue accent (`#388BFF`)
-- Color-coded status badges (Green=Active, Red=Danger, Yellow=Pending)
-- Striped table rows with hover effects
-- Smooth sidebar navigation with active state indicator
-
----
-
-## 📐 Design Patterns Used
-
-| Pattern | Where Used |
-|---------|-----------|
-| **Singleton** | `DatabaseConnection` — single DB connection |
-| **DAO (Data Access Object)** | All `*DAO.java` classes |
-| **MVC (Model-View-Controller)** | model/ + ui/ + dao/ separation |
-| **Factory Method** | `UITheme` button/component factories |
-
----
-
-## 📊 Sample Data
-The SQL script inserts 6 sample customers, interactions, tickets, and deals so the app looks populated immediately on first run.
-
----
-
-## 🧪 Testing the App
-1. Launch → Splash screen → Dashboard loads with live stats
-2. Go to **Customers** → Try Add/Edit/Delete/Search
-3. Go to **Interactions** → Log a new call or email
-4. Go to **Service Desk** → Create a ticket, then update its status
-5. Go to **Deals** → Add a deal, change its stage
-
----
-
-## 👨‍💻 Technologies
-- **Language:** Java 17
-- **GUI:** Java Swing (javax.swing)
-- **Database:** MySQL 8.0
-- **Connectivity:** JDBC (mysql-connector-java)
-- **IDE:** IntelliJ IDEA / Eclipse / NetBeans
-
----
-
-*BTech Second Year Project — CRM System | 2026*
 
